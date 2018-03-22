@@ -13,8 +13,8 @@ import {
 import Carousel from './Carousel'
 const slideStyles = [
   { x: 0, s: 1, o: 1 },
-  { x: -40, s: 0.8, o: 0.6 },
-  { x: -60, s: 0.6, o: 0.4 },
+  { x: -35, s: 0.8, o: 0.4 },
+  { x: -62, s: 0.6, o: 0.3 },
 ]
 const outSlideStyles = { x: 100, s: 2, o: 0 }
 
