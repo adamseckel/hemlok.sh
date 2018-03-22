@@ -35,7 +35,7 @@ class App extends Component {
               padding-bottom: 0;
             `}>
             <Row>
-              <Text pt> hemlok </Text>
+              <Text pt> hemlok.io </Text>
               <Row justify="end">
                 <StyledLink pt light small href="https://twitter.com/hemlok_">
                   twitter
