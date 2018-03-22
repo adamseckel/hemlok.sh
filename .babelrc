@@ -1,0 +1,20 @@
+{
+  "plugins": [
+    [
+      "emotion",
+      {
+        "hoist": false,
+        "sourceMap": false,
+        "autoLabel": true,
+        "extractStatic": false,
+        "importedNames": {
+          "styled": "styled",
+          "css": "css",
+          "keyframes": "keyframes",
+          "injectGlobal": "injectGlobal",
+          "merge": "merge"
+        }
+      }
+    ]
+  ]
+}
