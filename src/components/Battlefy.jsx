@@ -20,7 +20,7 @@ const outSlideStyles = { x: 100, s: 2, o: 0 }
 
 export default function(props) {
   return (
-    <Layout size="large" white>
+    <Layout size="hero">
       <Carousel numSlides={2}>
         {({ activeSlideIndex, onGoToSlide }) => (
           <Row align="stretch" justify="stretch">
@@ -39,7 +39,7 @@ export default function(props) {
               </Text>
               <Divider />
               <Text pt>
-                a material design inspiried item manager for the Destiny api.
+                a new player and community centric on-demand competition mode
               </Text>
               <Link
                 css={`
@@ -56,8 +56,9 @@ export default function(props) {
                   opacity: ${activeSlideIndex === 0 ? 1 : 0.2};
                   margin-bottom: ${styleguide.spacing.sm};
                 `}>
-                vault allows players to move items between characters in game, a
-                feature not supported by the actual game client.
+                lightning tournaments allow league of legends players to group
+                up in a chat room, and queue up for on demand match-making and
+                tournaments
               </Text>
               <Text
                 pt
@@ -66,8 +67,8 @@ export default function(props) {
                   opacity: ${activeSlideIndex === 1 ? 1 : 0.2};
                   margin-bottom: ${styleguide.spacing.sm};
                 `}>
-                vault uses react-motion and a home-baked drag and drop library
-                to create a native experience
+                lightning tournaments rewards repeat player play, granting
+                rewards for leveling up
               </Text>
               <Text
                 pt
@@ -76,8 +77,9 @@ export default function(props) {
                   opacity: ${activeSlideIndex === 2 ? 1 : 0.2};
                   margin-bottom: ${styleguide.spacing.medium};
                 `}>
-                vault emulates the in game experience where you’d expect it, and
-                offers improvements where they’re welcome
+                lightning tournaments uses the league of legends api to detect
+                player ranks, confirm all players are present, and record the
+                game score in real time.
               </Text>
             </Column>
             <Column

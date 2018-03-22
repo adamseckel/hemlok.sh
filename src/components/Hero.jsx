@@ -10,7 +10,7 @@ import {
   styleguide,
 } from './styleguide'
 const StyledLink = styled(Link)`
-  margin-right: ${styleguide.spacing.md};
+  margin-left: ${styleguide.spacing.md};
 `
 export default function(props) {
   return (
@@ -35,7 +35,7 @@ export default function(props) {
             London, UK.
           </Text>
           <Divider />
-          <Row justify="start">
+          <Row justify="end">
             <StyledLink pt light>
               twitter
             </StyledLink>
