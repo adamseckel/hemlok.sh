@@ -16,11 +16,11 @@ export const text = {
   paragraph: '1.2rem',
   subtext: '1rem',
   subtitle: '2rem',
-  title: '3rem',
+  title: '4rem',
   hero: '7rem',
 }
 
-export const contentMaxWidth = 1200
+export const contentMaxWidth = 1400
 export const layouts = {
   content: css`
     margin: 0 auto;
@@ -30,9 +30,10 @@ export const layouts = {
 }
 
 export const spacing = {
-  small: '0.5rem',
-  medium: '2rem',
-  large: '4rem',
+  xs: '0.5rem',
+  sm: '1rem',
+  md: '2rem',
+  lg: '4rem',
 
   s: '12px',
   m: '20px',

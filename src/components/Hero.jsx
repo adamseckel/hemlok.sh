@@ -10,11 +10,11 @@ import {
   styleguide,
 } from './styleguide'
 const StyledLink = styled(Link)`
-  margin-right: ${styleguide.spacing.medium};
+  margin-right: ${styleguide.spacing.md};
 `
 export default function(props) {
   return (
-    <Layout size="large">
+    <Layout size="medium">
       <Row align="start">
         <Column
           align="start"

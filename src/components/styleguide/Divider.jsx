@@ -6,7 +6,7 @@ export default styled.hr`
   width: 100%;
   border-bottom: ${props => (props.lg ? '4px' : '1px')} solid
     ${props => (props.subtext ? colors.subtext : colors.foreground)};
-  margin: ${props => (props.inline ? 0 : spacing.medium)}
+  margin: ${props => (props.inline ? 0 : spacing.sm)}
     ${props => (props.contentWide ? 'auto' : 0)};
   max-width: ${props =>
     props.contentWide ? `${contentMaxWidth - 80}px` : 'auto'};

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Hero, ParallaxFx } from './components'
+import { Hero, Vault, ParallaxFx } from './components'
 class App extends Component {
   render() {
     return (
@@ -11,10 +11,9 @@ class App extends Component {
             z-index: 4;
           `}>
           <Hero />
-          <Hero />
-          <Hero />
-          <Hero />
-          <Hero />
+          <Vault />
+          <Vault />
+          <Vault />
         </div>
       </div>
     )

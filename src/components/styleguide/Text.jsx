@@ -1,5 +1,5 @@
-import styled from "react-emotion";
-import { colors, text } from "./styleguide";
+import styled from 'react-emotion'
+import { colors, text } from './styleguide'
 
 const Text = styled.p`
   color: ${props =>
@@ -15,14 +15,14 @@ const Text = styled.p`
     props.pt
       ? '"futura-pt", Futura, Helvetica, Arial, sans-serif'
       : props.serif
-        ? "Georgia, serif"
-        : "Futura, Helvetica, Arial, sans-serif"};
+        ? 'Georgia, serif'
+        : 'Futura, Helvetica, Arial, sans-serif'};
   margin: 0;
-  width: ${props => (props.inline ? "auto" : "100%")};
+  width: ${props => (props.inline ? 'auto' : '100%')};
   transition: all 200ms ease;
-  text-align: ${props => (props.centered ? "center" : "auto")};
+  text-align: ${props => (props.centered ? 'center' : 'auto')};
   font-weight: ${props =>
-    props.light ? "book" : props.bold ? "bold" : "normal"};
+    props.light ? 'book' : props.bold ? 'bold' : 'normal'};
   font-size: ${props =>
     props.hero
       ? text.hero
@@ -31,10 +31,10 @@ const Text = styled.p`
         : props.subtitle
           ? text.subtitle
           : props.small ? text.subtext : text.paragraph};
-`;
-export default Text;
+`
+export default Text
 
-export const Link = styled(Text.withComponent("a"))`
+export const Link = styled(Text.withComponent('a'))`
   width: auto;
   cursor: pointer;
   text-decoration: none;
@@ -42,4 +42,4 @@ export const Link = styled(Text.withComponent("a"))`
   &:hover {
     color: ${colors.foreground};
   }
-`;
+`
