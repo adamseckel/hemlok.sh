@@ -22,10 +22,16 @@ class Carousel extends Component {
   }
 
   onGoToSlide(index) {
-    console.log(index)
     this.setState({
       activeSlideIndex: index,
     })
+    clearInterval(this.timer)
+
+    this.timer = setInterval(() => {
+      this.onGoToSlide(
+        incrementSlide(this.state.activeSlideIndex, this.props.numSlides)
+      )
+    }, 10000)
   }
 
   render() {

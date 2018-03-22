@@ -20,7 +20,7 @@ const outSlideStyles = { x: 100, s: 2, o: 0 }
 
 export default function(props) {
   return (
-    <Layout size="hero">
+    <Layout size="large" white>
       <Carousel numSlides={2}>
         {({ activeSlideIndex, onGoToSlide }) => (
           <Row align="stretch" justify="stretch">
@@ -35,7 +35,7 @@ export default function(props) {
                   white-space: no-wrap;
                   line-height: 100%;
                 `}>
-                vault.
+                battlefy.
               </Text>
               <Divider />
               <Text pt>
@@ -45,8 +45,8 @@ export default function(props) {
                 css={`
                   margin-top: ${styleguide.spacing.sm};
                 `}
-                href="https://vault.crucible.gg">
-                vault.crucible.gg
+                href="https://battlefy.com">
+                battlefy.com
               </Link>
               <Divider />
               <Text

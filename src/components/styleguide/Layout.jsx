@@ -25,12 +25,13 @@ const Section = styled(Column)`
 
 const Background = styled.div`
   width: 100%;
-  overflow: hidden;
+  background-color: ${props =>
+    props.white ? colors.foreground : 'transparent'};
 `
 
-export default ({ children, size, black, gray, align, justify }) => {
+export default ({ children, size, white, black, gray, align, justify }) => {
   return (
-    <Background>
+    <Background white={white}>
       <Section size={size} align={align} justify={justify}>
         {children}
       </Section>
