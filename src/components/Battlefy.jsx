@@ -85,7 +85,7 @@ export default function(props) {
             <Column
               css={`
                 height: 600px;
-                left: 0;
+                margin-left: 120px;
               `}>
               <div
                 css={`
@@ -93,7 +93,7 @@ export default function(props) {
                   top: 0;
                   bottom: 0;
                   right: 0;
-                  left: 80px;
+                  left: 0;
                   z-index: 10;
                 `}>
                 {[0, 1, 2].map(index => {
@@ -112,7 +112,6 @@ export default function(props) {
                         transform: translate3d(${activeStyle.x}px, 0, 0)
                           scale3d(${activeStyle.s}, ${activeStyle.s}, 1);
                         z-index: ${10 + index};
-                        margin-left: 40px;
                         transform-origin: left;
                         transition: all 500ms ease;
                         background-color: ${styleguide.colors.foreground};
