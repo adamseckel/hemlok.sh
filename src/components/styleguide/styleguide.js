@@ -15,8 +15,8 @@ export const radii = {
 export const text = {
   paragraph: '1.2rem',
   subtext: '1rem',
-  subtitle: '1.4rem',
-  title: '1.6rem',
+  subtitle: '1.8rem',
+  title: '1.4rem',
   hero: '4rem',
   serif: 'Georgia, serif',
   sans: 'Futura, Helvetica, Arial, sans-serif',

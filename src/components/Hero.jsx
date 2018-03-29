@@ -47,7 +47,7 @@ export default function(props) {
             <Link subtitle href="https://github.com/hemlok">
               github
             </Link>
-            <Link subtitle href="mailto:adam.seckel@gmail.com">
+            <Link subtitle href="mailto:adam.seckel+hemlok@gmail.com">
               email
             </Link>
           </Row>
