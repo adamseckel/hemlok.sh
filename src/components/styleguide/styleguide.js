@@ -1,9 +1,9 @@
 import { css } from 'emotion'
 
 export const colors = {
-  background: 'black',
-  foreground: 'white',
-  primary: '#EE26FF',
+  background: 'white',
+  foreground: 'black',
+  primary: '#FA5B47',
 }
 
 export const radii = {
@@ -15,9 +15,11 @@ export const radii = {
 export const text = {
   paragraph: '1.2rem',
   subtext: '1rem',
-  subtitle: '2rem',
-  title: '4rem',
-  hero: '7rem',
+  subtitle: '1.4rem',
+  title: '1.6rem',
+  hero: '4rem',
+  serif: 'Georgia, serif',
+  sans: 'Futura, Helvetica, Arial, sans-serif',
 }
 
 export const contentMaxWidth = 1400

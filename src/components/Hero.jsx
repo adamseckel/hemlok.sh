@@ -1,53 +1,58 @@
 import * as React from 'react'
-import styled from 'react-emotion'
-import {
-  Layout,
-  Text,
-  Divider,
-  Row,
-  Column,
-  Link,
-  styleguide,
-} from './styleguide'
-const StyledLink = styled(Link)`
-  margin-left: ${styleguide.spacing.md};
+import { css } from 'react-emotion'
+import { Layout, Text, Row, Column, Link, styleguide } from './styleguide'
+
+const mb = css`
+  margin-bottom: 40px;
 `
+const hiddenMobile = css`
+  @media only screen and (max-width: 800px) {
+    display: none;
+  }
+`
+
 export default function(props) {
   return (
-    <Layout size="medium">
+    <Layout size="hero">
       <Row align="start">
         <Column
           align="start"
+          justify="space-between"
           css={`
+            background-color: ${styleguide.colors.background};
+            padding: ${styleguide.spacing.lg};
+            min-height: 60vh;
             width: auto;
+            max-width: 700px;
           `}>
           <Text
             hero
+            serif
+            bold
             css={`
               white-space: no-wrap;
               line-height: 100%;
+              ${mb};
             `}>
-            hemlok.sh
+            Hey, <br />
+            I’m Adam
           </Text>
-          <Divider />
-          <Text pt>
-            I’m Adam Seckel, a Canadian product designer and developer living in
-            London, UK.
+          <Text title className={mb}>
+            I am a product and design-systems focused web engineer and designer.
           </Text>
-          <Divider />
-          <Row justify="end">
-            <StyledLink pt light>
+          <Row justify="space-between">
+            <Link subtitle href="https://twitter.com/hemlok_">
               twitter
-            </StyledLink>
-            <StyledLink pt light>
-              linkedin
-            </StyledLink>
-            <StyledLink pt light>
+            </Link>
+            <Link subtitle href="https://github.com/hemlok">
               github
-            </StyledLink>
+            </Link>
+            <Link subtitle href="mailto:adam.seckel@gmail.com">
+              email
+            </Link>
           </Row>
         </Column>
-        <Column grow />
+        <Column grow className={hiddenMobile} />
       </Row>
     </Layout>
   )

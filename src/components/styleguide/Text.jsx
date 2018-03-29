@@ -2,21 +2,9 @@ import styled from 'react-emotion'
 import { colors, text } from './styleguide'
 
 const Text = styled.p`
-  color: ${props =>
-    props.primary
-      ? colors.primary
-      : props.secondary
-        ? colors.secondary
-        : props.subtext
-          ? colors.subtext
-          : props.white ? colors.background : colors.text};
+  color: ${props => colors.foreground};
   font-size: 1rem;
-  font-family: ${props =>
-    props.pt
-      ? '"futura-pt", Futura, Helvetica, Arial, sans-serif'
-      : props.serif
-        ? 'Georgia, serif'
-        : 'Futura, Helvetica, Arial, sans-serif'};
+  font-family: ${props => (props.serif ? text.serif : text.sans)};
   margin: 0;
   width: ${props => (props.inline ? 'auto' : '100%')};
   transition: all 200ms ease;
