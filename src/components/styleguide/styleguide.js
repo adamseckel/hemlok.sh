@@ -1,7 +1,7 @@
 import { css } from 'emotion'
 
 export const colors = {
-  background: 'white',
+  background: 'black',
   foreground: 'black',
   primary: '#FA5B47',
 }

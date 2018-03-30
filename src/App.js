@@ -13,21 +13,24 @@ const StyledLink = styled(Link)`
   margin-left: ${styleguide.spacing.md};
 `
 
-// var body = document.getElementsByTagName('body')[0]
+var body = document.getElementsByTagName('body')[0]
 
-// function set(h, s, l = 0, i) {
-//   requestAnimationFrame(() => {
-//     const hue = h >= 360 ? 0 : h + 1
-//     const up = i > 100 && i.toString().split('')[0] % 2 !== 0
-//     const saturation = s + (up ? -1 : 1)
-//     body.style['background-color'] = `hsl(${h}, ${s}%, ${l}%)`
-//     setTimeout(() => {
-//       set(hue, saturation, l, i + 1)
-//     }, 3)
-//   })
-// }
+function set(h, s, l = 0, i) {
+  requestAnimationFrame(() => {
+    const hue = h >= 360 ? 0 : h + 1
+    const up = i > 100 && i.toString().split('')[0] % 2 !== 0
+    const saturation = s + (up ? -1 : 1)
+    document.documentElement.style.setProperty(
+      `--textColor`,
+      `hsl(${h}, ${s}%, ${l}%)`
+    )
+    setTimeout(() => {
+      set(hue, saturation, l, i > 200 ? 0 : i + 1)
+    }, 3)
+  })
+}
 
-// set(0, 0, 80, 0)
+set(0, 0, 80, 0)
 
 const v2 = (
   <div>

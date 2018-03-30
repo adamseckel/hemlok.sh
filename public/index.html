@@ -23,8 +23,10 @@
   <title>hemlok.io</title>
   <style>
     body {
-      background-color: hsl(0, 36%, 75%);
-      background-image: url(%PUBLIC_URL%/hemlok.bg.svg);
+      background-color: var(--textColor);
+      will-change: background-color;
+
+      /* background-image: url(%PUBLIC_URL%/hemlok.bg.svg); */
       background-repeat: no-repeat;
       background-size: cover;
       color: white;
@@ -54,10 +56,10 @@
       transition: transform .1s linear;
     }
 
-    @font-face {
-      font-family: 'futura-pt';
-      font-weight: book;
-      src: url("%PUBLIC_URL%/futura-pt-book.ttf") format("truetype");
+    .text-color {
+      color: var(--textColor) !important;
+      transition: background-color 10ms ease;
+      will-change: color;
     }
   </style>
   <script type="text/javascript" src="https://unpkg.com/basicscroll/dist/basicScroll.min.js"> </script>
