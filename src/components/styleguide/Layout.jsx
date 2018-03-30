@@ -10,15 +10,10 @@ const sizeMap = {
   medium: '60vh',
   small: '20vh',
 }
-const minSizeMap = {
-  large: '800px',
-  medium: '600px',
-  small: '200px',
-}
 
 const Section = styled(Column)`
   height: ${props => sizeMap[props.size] || '80vh'};
-  min-height: ${props => minSizeMap[props.size] || '800px'};
+  min-height: 650px;
   position: relative;
   ${layouts.content};
 `

@@ -21,6 +21,9 @@ export default function(props) {
           css={`
             background-color: ${styleguide.colors.background};
             padding: ${styleguide.spacing.lg};
+            @media only screen and (max-width: 800px) {
+              padding: ${styleguide.spacing.md};
+            }
             min-height: 60vh;
             width: auto;
             max-width: 700px;
