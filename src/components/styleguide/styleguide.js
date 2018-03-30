@@ -1,8 +1,8 @@
 import { css } from 'emotion'
 
 export const colors = {
-  background: 'white',
-  foreground: 'black',
+  background: 'black',
+  foreground: 'white',
   primary: '#FA5B47',
 }
 
