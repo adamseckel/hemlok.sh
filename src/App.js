@@ -13,8 +13,6 @@ const StyledLink = styled(Link)`
   margin-left: ${styleguide.spacing.md};
 `
 
-var body = document.getElementsByTagName('body')[0]
-
 function set(h, s, l = 0, i) {
   requestAnimationFrame(() => {
     const hue = h >= 360 ? 0 : h + 1
